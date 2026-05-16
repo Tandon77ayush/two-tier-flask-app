@@ -16,5 +16,10 @@ pipeline{
                 sh 'docker compose up -d'
             }
         }
+        stage('finished sucsessfully'){
+            steps{
+                echo "finished sucsessfully"
+            }
+        }
     }
 }
