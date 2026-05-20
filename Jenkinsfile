@@ -8,7 +8,7 @@ pipeline{
         }
         stage('build'){
             steps{
-                sh 'docker comppose down'
+                sh 'docker compose down'
                 sh 'docker build -t flaskapp .'
             }
         }
