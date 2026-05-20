@@ -31,7 +31,7 @@ pipeline{
         }
         failure{
             emailext subject: "flaskpipeline",
-                     to: "tandonayush350@gmail.com"
+                     to: "tandonayush350@gmail.com",
                      body: "pipeline build is failed"
         }
     }
