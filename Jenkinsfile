@@ -22,4 +22,11 @@ pipeline{
             }
         }
     }
+    post{
+        success{
+            emailext subject: "success",
+                     to: "tandonayush350@gmail.com",
+                     body: "pipeline is build succesfuly"
+        }
+    }
 }
