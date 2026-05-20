@@ -28,15 +28,6 @@ pipeline{
         }
     }
     post{
-        success{
-            emailext subject: "flask-pipeline",
-                     to: "tandonayush350@gmail.com",
-                     body: "pipeline is build succesfuly"
-        }
-        failure{
-            emailext subject: "flaskpipeline",
-                     to: "tandonayush350@gmail.com",
-                     body: "pipeline build is failed"
-        }
+       mail('flask-pipeline status','tandonayush350@gmail.com','pipeline is biuld successfully','pipeline build is failed')
     }
 }
